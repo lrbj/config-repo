@@ -11,4 +11,4 @@ spring:
 
 
 env:
-  test2
+  test
