@@ -1,15 +1,16 @@
 zuul:
+  #全部服务忽略敏感头(全部服务都可以传递cookie)
   sensitive-headers: 
   routes:
-  #method1
-   myProduct:
-     path: /myProduct/**
-     serviceId: product
-     sensitiveHeaders:
-#method2
-  #  product: /myProduct/**
-  #ignored-patterns:
-   # - /**/product/list
+  # /myProduct/product/list -> /product/product/list
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+  #简洁写法
+#    product: /myProduct/**
+  #排除某些路由
+  ignored-patterns:
+    - /**/product/listForOrder 
 management:
   security:
     enabled: false
