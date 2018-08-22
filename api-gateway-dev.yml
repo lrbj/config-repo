@@ -1,5 +1,4 @@
 zuul:
-#igonre all sensitive-headers
   sensitive-headers: 
   routes:
   #method1
