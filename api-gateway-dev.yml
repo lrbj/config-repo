@@ -1,1 +1,15 @@
+zuul:
+  routes:
+  #method1
+   myProduct:
+     path: /myProduct/**
+     serviceId: product
+     sensitiveHeaders:
+#method2
+  #  product: /myProduct/**
+  #ignored-patterns:
+   # - /**/product/list
+management:
+  security:
+    enabled: false
 
