@@ -29,4 +29,4 @@ feign:
       feignName:
         connectTimeout: 5000
         readTimeout: 5000
-        loggerLevel: full
+        loggerLevel: 
